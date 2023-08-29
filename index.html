@@ -6,25 +6,41 @@
     <title>Page changer</title>
     <link rel="stylesheet" href="./bootstrap.min.css">
     <style>
-        /*body{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            background-color: #00abf0;
-            height: 100vh;
+      /* Apply scrollbar styles to the entire document */
+      ::-webkit-scrollbar {
+            width: 12px;
         }
-        body div{
-            display: flex;
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
         }
-        .inputColor{
-            margin-left: 10px;
-            min-width: 80px;
-            min-height: 40px;
-            margin-top: 20px;
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #00abf0;
         }
-        */
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0077c5;
+        }
+
+        /* Apply the styles to the iframe content */
+        iframe::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        iframe::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        iframe::-webkit-scrollbar-thumb {
+            background: #00abf0;
+        }
+
+        iframe::-webkit-scrollbar-thumb:hover {
+            background: #0077c5;
+        }
         @media (max-width:1000px) {
           .containImage{
            width:100%;
